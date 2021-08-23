@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(117, 153, 126);
+}
+.carousel {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.imgs {
+  display: flex;
+  transition: transform 1s linear;
+  transform: translateX(0);
+}
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}

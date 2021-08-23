@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+body{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    min-height: 100vh;
+background-color: rebeccapurple;
+}
+
+.main-container{
+    width: 500px;
+    height: 500px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+img{
+    transform-origin:center center ;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}

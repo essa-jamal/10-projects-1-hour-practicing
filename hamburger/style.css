@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-image: linear-gradient(180deg,rgba(148, 107, 189,.5),rgba(148, 107, 189,.3),rgba(148, 107, 189,.1));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+button {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  background-color: rgb(148, 107, 189);
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  
+  transition: transform ease-in-out 1s,margin ease-in-out 1s ;
+  border:none;
+  margin: 1rem;
+ 
+
+}
+button.active{
+    margin: 0;
+    transform: translateX(-150px);
+  
+}
+nav {
+  background-color: rgb(148, 107, 189);
+  width: 150px;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  margin: 0;
+  transform: translateX(100%);
+  
+  transition: transform ease-in-out 1s;
+  min-height: 100vh;
+}
+nav.active {
+  transform: translateX(0);
+}
+ul {
+  list-style-type: none;
+  text-align: right;
+}
+li {
+  margin: 0 0.5rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.child  {
+  font-size: .7rem;
+  transform: translateX(100%);
+  height: 0;
+  visibility: hidden;
+  transition: transform ease-in-out 2s,height 1s ease-in-out ;
+
+}
+
+.child.active {
+  transform: translateX(0);
+  visibility: visible;
+  
+}
+.child li{
+  margin: .5rem;
+}

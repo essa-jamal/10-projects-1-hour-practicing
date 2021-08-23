@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  position: fixed;
+  left: -1vw;
+  transform: translateX(0);
+  
+  animation: fallw 3s linear forwards;
+  font-size: 2rem;
+}
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@keyframes fallw {
+  to {
+    transform: translateX(105vw);
+    
+  }
+}
+.rain{
+    position:  fixed;
+    top: -1vh;
+    transform: translateY(0);
+    font-size: 2rem;
+    animation: fall 3s linear forwards;
+    
+}
